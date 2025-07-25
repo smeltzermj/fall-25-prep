@@ -55,6 +55,7 @@ def main() -> None:
 # ---- sanity assertions ----------------------------------
 assert abs(miles_to_km(1) - 1.60934) < 1e-6
 assert abs(km_to_miles(1.60934) - 1) < 1e-6
+assert round(miles_to_km(26.2), 2) == 42.16  # marathon sanity check
 
 # ---- script‑vs‑module guard -----------------------------
 if __name__ == "__main__":
